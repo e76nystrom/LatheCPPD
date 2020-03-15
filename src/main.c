@@ -139,7 +139,6 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
-  
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -186,8 +185,6 @@ int main(void)
 
 
   /* USER CODE END 2 */
- 
- 
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -1190,8 +1187,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : ExtInt_Pin Index1_Pin */
-  GPIO_InitStruct.Pin = ExtInt_Pin|Index1_Pin;
+  /*Configure GPIO pins : ExtInt_Pin Index_Pin */
+  GPIO_InitStruct.Pin = ExtInt_Pin|Index_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);

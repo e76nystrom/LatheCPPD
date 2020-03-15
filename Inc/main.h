@@ -204,8 +204,8 @@ void Error_Handler(void);
 #define I2C_Sda_GPIO_Port GPIOB
 #define Pin15_Pin GPIO_PIN_0
 #define Pin15_GPIO_Port GPIOE
-#define Index1_Pin GPIO_PIN_1
-#define Index1_GPIO_Port GPIOE
+#define Index_Pin GPIO_PIN_1
+#define Index_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
