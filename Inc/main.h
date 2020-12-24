@@ -48,7 +48,8 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-//#include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -69,8 +70,6 @@ extern "C" {
 /* USER CODE BEGIN EM */
 
 /* USER CODE END EM */
-
-//void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
@@ -176,10 +175,10 @@ void Error_Handler(void);
 #define Step5_GPIO_Port GPIOC
 #define Step2b_Pin GPIO_PIN_8
 #define Step2b_GPIO_Port GPIOA
-#define SPI_SCK_Pin GPIO_PIN_10
-#define SPI_SCK_GPIO_Port GPIOC
-#define SPI_MISO_Pin GPIO_PIN_11
-#define SPI_MISO_GPIO_Port GPIOC
+#define SPI_Sck_Pin GPIO_PIN_10
+#define SPI_Sck_GPIO_Port GPIOC
+#define SPI_Miso_Pin GPIO_PIN_11
+#define SPI_Miso_GPIO_Port GPIOC
 #define Uart5Tx_Pin GPIO_PIN_12
 #define Uart5Tx_GPIO_Port GPIOC
 #define Pin12_Pin GPIO_PIN_0
@@ -196,12 +195,12 @@ void Error_Handler(void);
 #define Pin11_GPIO_Port GPIOD
 #define Dir4_Pin GPIO_PIN_7
 #define Dir4_GPIO_Port GPIOD
-#define SPI_MOSI_Pin GPIO_PIN_5
-#define SPI_MOSI_GPIO_Port GPIOB
-#define I2C_SCL_Pin GPIO_PIN_6
-#define I2C_SCL_GPIO_Port GPIOB
-#define I2C_SDA_Pin GPIO_PIN_7
-#define I2C_SDA_GPIO_Port GPIOB
+#define SPI_Mosi_Pin GPIO_PIN_5
+#define SPI_Mosi_GPIO_Port GPIOB
+#define I2C_Scl_Pin GPIO_PIN_6
+#define I2C_Scl_GPIO_Port GPIOB
+#define I2C_Sda_Pin GPIO_PIN_7
+#define I2C_Sda_GPIO_Port GPIOB
 #define Pin15_Pin GPIO_PIN_0
 #define Pin15_GPIO_Port GPIOE
 #define Index_Pin GPIO_PIN_1
